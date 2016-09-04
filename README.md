@@ -9,7 +9,7 @@ Drop down calculator for Google Chrome
 - Guide  
 1) Download the Chrome-Calculator repository  
 2) Go to "chrome://extensions"  
-3) Check "Developer Mode"
+3) Check "Developer Mode"  
 4) Click "Load unpacked extension..."  
 5) Locate the downloaded repository and select the base directory  
   
