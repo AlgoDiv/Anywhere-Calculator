@@ -5,7 +5,4 @@ function appEquat(x) {
 function showEquat() {
   document.getElementById("answer").innerHTML = eval(equation);
 }
-document.getElementById("r1b1").onclick = appEquat("0");
-document.getElementById("r1b3").onclick = showEquat();
-
-document.getElementById("r2b1").onclick = appEquat("1");
+document.getElementById("r1b3").onclick = showEquat;
