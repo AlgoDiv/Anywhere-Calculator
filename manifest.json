@@ -4,10 +4,10 @@
   "name": "Calculator",
   "description": "This extension brings a calculator to any page.",
   "version": "0.1",
-
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  
   "browser_action": {
     "default_icon": "images/icon.png",
     "default_popup": "popup.html"
   }
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
