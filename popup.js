@@ -1,7 +1,7 @@
 var curNum = 0;
 var tempNum = 0;
 var answer = 0;
-var action = 'Z';
+var action = 'S';
 function appCN(x) {
   curNum = parseInt(curNum.toString() + x);
   answer = curNum;
