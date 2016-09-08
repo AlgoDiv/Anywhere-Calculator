@@ -1,7 +1,7 @@
 var curNum = 0;
 var tempNum = 0;
 var answer = 0;
-var action = 'S';
+var action = 'Z';
 function appCN(x) {
   curNum = parseInt(curNum.toString() + x);
   answer = curNum;
@@ -17,24 +17,29 @@ function getAction(x) {
   updateAns();
 }
 function getAns() {
-  switch(action) {
-    case 'A':
-      answer = curNum + tempNum;
-      tempNum = answer;
-      curNum = 0;
-      updateAns();
-    case 'S':
-      answer = tempNum - curNum;
-      tempNum = answer;
-      curNum = 0;
-      updateAns();
   }
 }
 function updateAns() {
   document.getElementById("answer").innerHTML = answer;
 }
 
+document.getElementById("r1b1").onclick = function() { appCN("0"); };
+
 document.getElementById("r1b3").onclick = function() { getAns(); };
+document.getElementById("r1b4").onclick = function() { getAction('A'); };
+
 document.getElementById("r2b1").onclick = function() { appCN("1"); };
 document.getElementById("r2b2").onclick = function() { appCN("2"); };
+document.getElementById("r2b3").onclick = function() { appCN("3"); };
 document.getElementById("r2b4").onclick = function() { getAction('S'); };
+
+document.getElementById("r3b1").onclick = function() { appCN("4"); };
+document.getElementById("r3b2").onclick = function() { appCN("5"); };
+document.getElementById("r3b3").onclick = function() { appCN("6"); };
+document.getElementById("r3b4").onclick = function() { getAction('M'); };
+
+document.getElementById("r4b1").onclick = function() { appCN("7"); };
+document.getElementById("r4b2").onclick = function() { appCN("8"); };
+document.getElementById("r4b3").onclick = function() { appCN("9"); };
+document.getElementById("r4b4").onclick = function() { getAction('D'); };
+
