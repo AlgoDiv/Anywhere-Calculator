@@ -1,7 +1,7 @@
 var curNum = 0;
 var tempNum = 0;
 var answer = 0;
-var action = 'A';
+var action = 'Z';
 function appCN(x) {
   curNum = parseInt(curNum.toString() + x);
   answer = curNum;
@@ -9,12 +9,26 @@ function appCN(x) {
 }
 function getAction(x) {
   action = x;
-  if (curNum != 0) {
+  if(curNum != 0) {
     tempNum = curNum
   }
   curNum = 0;
   answer = curNum;
   updateAns();
+}
+function getAns() {
+  switch(action) {
+    case 'A':
+      answer = curNum + tempNum;
+      tempNum = answer;
+      curNum = 0;
+      updateAns();
+    case 'S':
+      answer = curNum - tempNum;
+      tempNum = answer;
+      curNum = 0;
+      updateAns();
+  }
 }
 function updateAns() {
   document.getElementById("answer").innerHTML = answer;
