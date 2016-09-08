@@ -24,7 +24,7 @@ function getAns() {
       curNum = 0;
       updateAns();
     case 'S':
-      answer = curNum - tempNum;
+      answer = tempNum - curNum;
       tempNum = answer;
       curNum = 0;
       updateAns();
