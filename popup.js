@@ -44,7 +44,7 @@ function updateAns() {
 }
 
 document.getElementById("r1b1").onclick = function() { appCN("0"); };
-
+document.getElementById("r1b2").onclick = function() { appCN("."); };
 document.getElementById("r1b3").onclick = function() { getAns(); };
 document.getElementById("r1b4").onclick = function() { getAction('A'); };
 
