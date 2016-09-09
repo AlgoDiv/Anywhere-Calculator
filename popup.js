@@ -39,12 +39,18 @@ function getAns() {
     updateAns();
   } else {  }
 }
+function clear() {
+  curNum = 0;
+  tempNum = 0;
+  answer = 0;
+  action = 'Z';
+}
 function updateAns() {
   document.getElementById("answer").innerHTML = answer;
 }
 
 document.getElementById("r1b1").onclick = function() { appCN("0"); };
-document.getElementById("r1b2").onclick = function() { appCN("."); };
+document.getElementById("r1b2").onclick = function() { clear(); };
 document.getElementById("r1b3").onclick = function() { getAns(); };
 document.getElementById("r1b4").onclick = function() { getAction('A'); };
 
