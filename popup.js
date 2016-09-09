@@ -17,29 +17,28 @@ function getAction(x) {
   updateAns();
 }
 function getAns() {
-    if(action = 'A') {
-      answer = tempNum + curNum;
-      tempNum = answer;
-      curNum = 0;
-      updateAns();
-    } else if(action = 'S') {
-      answer = tempNum - curNum;
-      tempNum = answer;
-      curNum = 0;
-      updateAns();
-    } else if(action = 'M') {
-      answer = tempNum * curNum;
-      tempNum = answer;
-      curNum = 0;
-      updateAns();
-    } else if(action = 'D') {
-      answer = tempNum / curNum;
-      tempNum = answer;
-      curNum = 0;
-      updateAns();
-    } else {
-      document.getElementById("answer").innerHTML = "Err 1";
-    }
+  if(action == 'A') {
+    answer = tempNum + curNum;
+    tempNum = answer;
+    curNum = 0;
+    updateAns();
+  } else if(action == 'S') {
+    answer = tempNum - curNum;
+    tempNum = answer;
+    curNum = 0;
+    updateAns();
+  } else if(action == 'M') {
+    answer = tempNum * curNum;
+    tempNum = answer;
+    curNum = 0;
+    updateAns();
+  } else if(action == 'D') {
+    answer = tempNum / curNum;
+    tempNum = answer;
+    curNum = 0;
+    updateAns();
+  } else {
+    document.getElementById("answer").innerHTML = "Err 1";
   }
 }
 function updateAns() {
