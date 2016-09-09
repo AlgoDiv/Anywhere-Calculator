@@ -3,7 +3,7 @@ var tempNum = 0;
 var answer = 0;
 var action = 'Z';
 function appCN(x) {
-  curNum = parseInt(curNum.toString() + x);
+  curNum = parseFloat(curNum.toString() + x);
   answer = curNum;
   updateAns();
 }
