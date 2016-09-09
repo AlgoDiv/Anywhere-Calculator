@@ -37,9 +37,7 @@ function getAns() {
     tempNum = answer;
     curNum = 0;
     updateAns();
-  } else {
-    document.getElementById("answer").innerHTML = "Err 1";
-  }
+  } else {  }
 }
 function updateAns() {
   document.getElementById("answer").innerHTML = answer;
