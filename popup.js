@@ -44,6 +44,7 @@ function clear() {
   tempNum = 0;
   answer = 0;
   action = 'Z';
+  updateAns();
 }
 function updateAns() {
   document.getElementById("answer").innerHTML = answer;
