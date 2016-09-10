@@ -1,13 +1,13 @@
 {
   "manifest_version": 2,
 
-  "name": "Calculator",
+  "name": "Anywhere Calculator",
+  "version": "1.0",
   "description": "This extension brings a calculator to any page.",
-  "version": "1",
+  "icons": { "128": "images/icon128.png" },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  
   "browser_action": {
-    "default_icon": "images/icon.png",
+    "default_icon": "images/icon19.png",
     "default_popup": "popup.html"
   }
 }
