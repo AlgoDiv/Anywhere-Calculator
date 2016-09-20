@@ -47,10 +47,10 @@ function clear() {
   updateAns();
 }
 function updateAns() {
-  if(answer.length >= 4) {
-    document.getElementById("answer").innerHTML = answer.substr(answer.length - 4);
+  if(answer.toString().length >= 4) {
+    document.getElementById("answer").innerHTML = answer.toString().substr(answer.toString().length - 4);
   } else {
-    document.getElementById("answer").innerHTML = answer;
+    document.getElementById("answer").innerHTML = answer.toString();
   }
 }
 
