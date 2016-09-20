@@ -47,10 +47,9 @@ function clear() {
   updateAns();
 }
 function updateAns() {
-  if (answer >= 6) {
+  if(answer >= 6) {
     document.getElementById("answer").innerHTML = answer.substr(answer.length - 6);
-  }
-  else {
+  } else {
     document.getElementById("answer").innerHTML = answer;
   }
 }
