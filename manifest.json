@@ -3,7 +3,7 @@
 
   "name": "Anywhere Calculator",
   "short_name": "Anywhere Calc",
-  "version": "1.2",
+  "version": "1.3",
   "description": "This extension brings a calculator to any page.",
   "icons": { "128": "images/icon128.png" },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
