@@ -48,7 +48,7 @@ function clear() {
 }
 function updateAns() {
   if(answer.length >= 4) {
-    document.getElementById("answer").innerHTML = answer.substr(answer.length - 6);
+    document.getElementById("answer").innerHTML = answer.substr(answer.length - 4);
   } else {
     document.getElementById("answer").innerHTML = answer;
   }
