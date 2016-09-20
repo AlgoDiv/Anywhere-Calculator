@@ -47,7 +47,12 @@ function clear() {
   updateAns();
 }
 function updateAns() {
-  document.getElementById("answer").innerHTML = answer;
+  if (answer >= 6) {
+    document.getElementById("answer").innerHTML = answer.substr(answer.length - 6);
+  }
+  else {
+    document.getElementById("answer").innerHTML = answer;
+  }
 }
 
 document.getElementById("r1b1").onclick = function() { appCN("0"); };
